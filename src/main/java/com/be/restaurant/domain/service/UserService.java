@@ -20,7 +20,7 @@ import reactor.core.publisher.Mono;
 
 @Service
 @RequiredArgsConstructor
-public class UserService extends BaseAbtractService {
+public class UserService extends BaseAbstractService {
 
     private final PasswordEncoder encoder;
 

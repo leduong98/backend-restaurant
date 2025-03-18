@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
 
 @Service
-public class BaseAbtractService {
+public class BaseAbstractService {
     @Autowired
     protected UserRepository userRepository;
 

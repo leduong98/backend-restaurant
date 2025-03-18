@@ -56,8 +56,7 @@ public class UserController {
         return ReactiveSecurityContextHolder.getContext()
                 .map(SecurityContext::getAuthentication)
                 .map(Authentication::getPrincipal)
-                .map(item -> ResponseEntity.ok(((org.springframework.security.core.userdetails.User) item)))
-                ;
+                .map(item -> ResponseEntity.ok(((org.springframework.security.core.userdetails.User) item)));
     }
 
 }
